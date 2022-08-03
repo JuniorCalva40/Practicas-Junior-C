@@ -209,6 +209,8 @@ background: linear-gradient(180deg, rgba(238,238,238,1) 35%, rgba(0,0,0,0.230427
   color:var(--orange);
 }
 
+
+
 /* media queries  */
 
 @media (max-width:991px){
