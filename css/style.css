@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --black:#373739;
+  --green:#03bb85;
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin: 0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top:1rem;
+  scroll-behavior: smooth;
+}
+section{
+  padding:5rem 9%;
+}
+
+
+
+.heading{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color:var(--black);
+  padding:1rem;
+}
+
+.heading span{
+  text-transform: uppercase;
+  color:var(--green);
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  border:.1rem solid var(--black);
+  font-weight: normal;
+  font-size: 1.7rem;
+  color:var(--black);
+  cursor: pointer;
+  background:#fff;
+  padding:.8rem 3rem;
+}
+
+.btn:hover{
+  background:var(--black);
+  color:#fff;
+}
+
+header{
+  position: fixed;
+  top:0; left:0; right:0;
+  z-index: 1000;
+  background:#fff;
+  padding:1.5rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+}
+
+/*Logo Urban Shoes.*/
+header .logo img{
+height: 40px;
+
+}
+header .logo:hover{
+  transform: scale(1.1);
+  
+}
+
+header .navbar a{
+  font-size: 1.5rem;
+  color:var(--black);
+  margin:0 1rem;
+  font-weight: 500;
+}
+
+header .navbar a:hover{
+  color:var(--green);
+  
+}
+
+header .icons a{
+  font-size: 2.5rem;
+  color:var(--black);
+  margin-left:1.5rem;
+}
+
+header .icons a:hover{
+  color:var(--green);
+}
+
+#menu-bar{
+  font-size: 2.5rem;
+  padding: .5rem 1.5rem;
+  border:.1rem solid var(--black);
+  color:var(--black);
+  border-radius: .3rem;
+  cursor: pointer;
+  display: none;
+}
+/*seccion productos home*/
+.home{
+  margin-top: 8rem;
+  background: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .row{
+  display:flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.home .row .content{
+  flex:1 1 25rem;
+}
+
+.home .row .books-slider{
+  flex:1 1 42rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.home .row .books-slider a img{
+  height: 25rem;
+}
+
+.home .row .books-slider a:hover img{
+  transform: scale(.9);
+}
+
+.home .row .books-slider .stand{
+  width:100%;
+  margin-top: -2rem;
+}
+
+.home .row .content h3{
+  color:var(--black);
+  font-size: 4.5rem;
+}
+
+.home .row .content p{
+  color:var(--black);
+  font-size: 1.4rem;
+  line-height: 2;
+  padding:1rem 0;
+}
+hr{
+  background-color: var(--black);
+  height: .2rem;
+  width: 100%;
+  opacity: calc(0.18);
+  border-radius: 1rem;
+}
+/* Productos API*/
+.products{
+  background: rgb(244,244,244);
+  padding: 10rem;
+
+}
+
+.products .box-container{
+  background-color: rgb(244,244,244);
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  width: 100%;
+  }
+
+.products .box-container .box{
+  border:.1rem solid rgba(0,0,0,.1);
+  border-radius: .5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background:#f9f9f9;
+  width: 30rem;
+  height: 37rem;
+  
+  
+}
+.products .box-container .box:hover{
+  box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.244);
+  
+}
+
+.products .box-container .box .content{
+  padding:1.4rem;
+}
+
+.products .box-container .box img{
+  height:15rem;
+  filter:drop-shadow(0 .5rem 1rem rgba(0,0,0,.1));
+  margin:2.5rem 2rem;
+}
+
+.products .box-container .box:hover img{
+  transform: scale(1.3);
+}
+
+.products .box-container .box .icons{
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  top:.5rem; left:-10rem;
+}
+
+.products .box-container .box:hover .icons{
+  left:1rem;
+}
+
+.products .box-container .box .icons a{
+  height:4.5rem;
+  width:5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  color:var(--black);
+  border:.1rem solid var(--black);
+  border-radius: .5rem;
+  background:#fff;
+  margin-top: .5rem;
+}
+
+.products .box-container .box .icons a:hover{
+  background:var(--green);
+  color:#fff;
+}
+
+.products .box-container .box .content h3{
+  color:var(--black);
+  width: 28rem;
+  font-size: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.products .box-container .box .content .price{
+  color:var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
+  padding:1rem 0;
+}
+
+.products .box-container .box .content .price span{
+  color:var(--green);
+  font-size: 1.5rem;
+}
+
+/* Footer*/
+footer{
+  background-color: var(--black);
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  font-weight: 400;
+  font-size: 1rem;
+}
+footer a{
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin: 1rem;
+  font-size: 2rem;
+}
+/* media queries  */
+
+@media (max-width:991px){
+
+  html{
+    font-size: 55%;
+  }
+
+  header{
+    padding:2rem;
+  }
+
+  section{
+    padding:2rem;
+  }
+
+}
+
+@media (max-width:768px){
+
+  #menu-bar{
+    display: block;
+  }
+
+  header .navbar{
+    position: absolute;
+    top:100%; left:-120%;
+    width:100%;
+    background:#eee;
+    border-top: .1rem solid rgba(0,0,0,.1);
+  }
+
+  header .navbar.active{
+    left:0;
+  }
+
+  header .navbar a{
+    font-size: 2rem;
+    background:#fff;
+    border:.1rem solid var(--black);
+    border-radius: .5rem;
+    padding:1.5rem;
+    margin:1.5rem;
+    display: block;
+    text-align: center;
+  }
+  .home{
+    margin-top: 10rem;
+  }
+  .home .slide-container .slide .image .text{
+    width:60%;
+  }
+
+  .home #prev,
+  .home #next{
+    top:85%;
+  }
+
+}
+
+@media (max-width:400px){
+
+  html{
+    font-size: 50%;
+  }
+
+  .heading{
+    font-size: 3rem;
+  }
+  .home{
+    margin-top: 10rem;
+  }
+.products .box-container .box{
+  width: 50rem;
+  height: 40rem;
+  }
+}
