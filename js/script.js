@@ -39,7 +39,7 @@ let formatter = new Intl.NumberFormat("en-US", {
                          <div class="price"> <span>${j.price.replace(/\u00A3/g, '$')}</span></div>
                          
                     </div>
-             <a href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fwww.paypal.com%2Fmyaccount%2Ftransfer&state=%2Fhomepage
+             <a href="
              " class="btn">Comprar </a>
         </div>
        
