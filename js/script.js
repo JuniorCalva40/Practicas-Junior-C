@@ -44,7 +44,7 @@ let formatter = new Intl.NumberFormat("en-US", {
         </div>
        
          `
-     ).splice(0,36).join('')}`;
+     ).splice(0,34).join('')}`;
      content.innerHTML = view;
  })(); 
  
