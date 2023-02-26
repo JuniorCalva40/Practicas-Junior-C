@@ -21,7 +21,7 @@ let formatter = new Intl.NumberFormat("en-US", {
 
  
 
-//Funtion map to Books
+/*/Funtion map to Books
  (async function getBooksMain ()  {
      const getBooks =await fetchData(API);
      const content = document.getElementById('content');
@@ -50,5 +50,5 @@ let formatter = new Intl.NumberFormat("en-US", {
  
 getBooksMain()
  
-
+*/
  
