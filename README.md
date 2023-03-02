@@ -2,7 +2,7 @@
 BOOKFLY  es un lugar donde puedes encontrar tu libro favorito 
 # Practicas Junior Calva.
 # Proyecto CONSUMO A UNA API => PAGE.
-#### Control de practicas preprofesionales
+#### Control de proyecto Investigacion.
 
 | Actidad | Tipo | Semana | Contenido | Estado |
 | --- | --- | --- | --- | --- |
